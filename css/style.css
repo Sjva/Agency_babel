@@ -1,0 +1,169 @@
+@font-face {
+	font-family: PT_Sans;
+	src: url(../fonts/PT_Sans.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+.container{
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+body {
+	font-family: PT_Sans, sans-serif;
+	height: 100%;
+	line-height: 22px;
+}
+.wrapper {
+	min-width: 320px;
+	max-width: 100%;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+	height: 230px;
+	background: #dcdcdc;
+	color:#767676;
+}
+.media:first-child {
+	margin-top: 6.5%;
+}
+.media, .media-body h3{
+	margin-top: 8px;
+}
+.header-tel{
+	margin-top: 5%;
+}
+.header-phone a, .header-feedback a{
+	text-decoration: none;
+	font-size: 30px;
+	color:#767676;
+}
+.header-feedback a{
+	font-size: 20px;
+	border-bottom: 2px dashed #767676;
+}
+/*-------------Menu--------------------------------------------------------------------------------*/
+menu{
+	background-color: #777777;
+}
+.navbar {
+	background-color: #777777;
+	border-radius: 0;
+	border: none;
+	font-size: 25px;
+	margin-bottom: 0;
+}
+#myNavbar ul{
+	padding: 2%;
+	margin: 0 auto;
+}
+#myNavbar ul li a {
+	text-align: center;
+	border-right: 2px solid #ffffff;
+	color: #ffffff;
+	padding-top: 0;
+	padding-bottom: 0;
+
+}
+#myNavbar ul li a:hover {
+	text-decoration: underline;
+
+}
+
+
+/*-----------Carousel-----------------------------------------------------------------------------------------------*/
+.carousel-control {
+	top: 45%;
+}
+.carousel-control.right {
+	background-image: none;
+	opacity: 1;
+	right: 8%;
+}
+.carousel-control.left {
+	background-image: none;
+	opacity: 1;
+	left:8%
+}
+.carousel-indicators{
+	display: none;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+/* Content(Catalog)
+-----------------------------------------------------------------------------*/
+.catalog {
+	width: 100%;
+	padding: 0 0 220px;
+	position: relative;
+
+}
+.catalog:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+	padding: 0 0 0 220px;
+}
+
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar  {
+	float: left;
+	width: 200px;
+	/*margin-left: -100%;*/
+	position: relative;
+
+
+}
+.sidebar-menu{
+	color:#919191;
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -220px auto 0;
+	min-width: 320px;
+	max-width: 1800px;
+	height: 220px;
+	background: #BFF08E;
+	position: relative;
+}
