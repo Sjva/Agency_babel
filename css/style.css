@@ -4,6 +4,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: PT_Sans-Bold;
+	src: url(../fonts/PT_Sans-Bold.ttf);
+	font-weight: normal;
+	font-style: normal;
+}
 html {
 	height: 100%;
 }
@@ -124,6 +130,7 @@ menu{
 	width: 100%;
 	padding: 0 0 220px;
 	position: relative;
+	color:#767676;
 
 }
 .catalog:after {
@@ -131,15 +138,60 @@ menu{
 	clear: both;
 	content: '';
 }
-.container {
-	width: 100%;
-	float: left;
-	overflow: hidden;
-}
+/*.container {*/
+	/*width: 100%;*/
+	/*float: left;*/
+	/*overflow: hidden;*/
+/*}*/
 .content {
+	margin-top: 2%;
 	padding: 0 0 0 220px;
 }
+.catalog-menu ul li a{
+	text-decoration: underline;
+	color:#767676;
 
+}
+.catalog-menu ul li a:hover{
+	text-decoration: none;
+}
+.thumbnail{
+	border-radius:0;
+	background-color: #dcdcdc;
+	padding-top: 15px;
+}
+.thumbnail a{
+	text-decoration: none;
+}
+.thumbnail .caption {
+	padding: 16px;
+	padding-bottom: 0;
+	color: #7d7d7d;
+	font-weight: 600;
+}
+.price{
+	padding-top: 15%;
+	padding-bottom: 0;
+	font-size: 20px;
+	color: #444444;
+	font-weight: bolder;
+}
+.pagination>li>a {
+	 position: relative;
+	 text-decoration: none;
+	 background-color: #fff;
+	 border:none;
+	padding: 6px 10px;
+	color: #7d7d7d;
+ }
+.pagination>li>a:hover {
+	background-color: #fff;
+	font-size: 20px;
+	padding-top: 0;
+}
+.main-text{
+	margin:18% -2% 25% -2%;
+}
 
 
 /* Left Sidebar
@@ -149,11 +201,56 @@ menu{
 	width: 200px;
 	/*margin-left: -100%;*/
 	position: relative;
-
-
 }
-.sidebar-menu{
-	color:#919191;
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	padding: 12px 16px;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.panel-group {
+	margin-bottom: 5px;
+	list-style: none;
+}
+.panel-group a{
+	text-decoration: none;
+	color:#767676;
+	font-size: 18px;
+}
+.panel-group a:focus{
+	text-decoration: underline;
+}
+.panel-group ul li{
+	font-size: 16px;
+	margin-left: 20px;
+}
+.panel-group ul li a {
+	font-size: 16px;
+	list-style-type: circle;
+}
+.panel-group ul li a:hover {
+	color:#000;
+	text-decoration: underline;
+}
+.price-list{
+	font-family: PT_Sans-Bold, sans-serif;;
+	padding: 55% 0 0 20%;
+}
+.price-list a p{
+	text-decoration: none;
+	font-size:26px;
+	color:#444444;
+	margin-left: -10%;
 }
 
 
@@ -164,6 +261,24 @@ menu{
 	min-width: 320px;
 	max-width: 1800px;
 	height: 220px;
-	background: #BFF08E;
+	background: #777777;
 	position: relative;
+	padding:3% 0 3% 0;
+	color:#ffffff;
+}
+.footer_test a, .footer_menu ul li a,.footer_email p a{
+	text-decoration: none;
+	color:#ffffff;
+}
+.footer_menu ul li{
+	list-style: none;
+}
+.footer_menu ul li, .footer_test a{
+	text-decoration: underline;
+}
+.footer_menu ul li:hover{
+	text-decoration: none;
+}
+.footer_test a:hover{
+	text-decoration: none;
 }
