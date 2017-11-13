@@ -55,7 +55,6 @@ body {
 	height: 100%;
 }
 
-
 /* Header
 -----------------------------------------------------------------------------*/
 header {
@@ -79,6 +78,7 @@ header {
 .header-tel{
 	font-family:OpenSans-CondLight, sans-serif;
 	margin-top: 4.5%;
+	padding-left: 6.4%;
 }
 .header-tel .header-phone{
 	padding: 0 0 7px;
@@ -91,7 +91,8 @@ header {
 }
 .header-feedback{
 	font-family: PT_Sans-Bold, sans-serif;
-	margin-top: -3%;
+	margin-top: -5%;
+	padding-left: 34%;
 	cursor: pointer;
 }
 .header-feedback span{
@@ -125,7 +126,6 @@ header {
 	text-decoration: none;
 	border: none;
 }
-
 .modal-header h3{
 	font-family: PT_Sans-Bold, sans-serif;
 	text-align: center;
@@ -173,9 +173,8 @@ header {
 	opacity: 0.6;
 }
 
-
 /*-------------Menu--------------------------------------------------------------------------------*/
-menu{
+#menu{
 	background-color: #777777;
 	font-family: PT_Sans, sans-serif;
 }
@@ -202,6 +201,12 @@ menu{
 #myNavbar ul li a:hover {
 	text-decoration: underline;
 	background-color: #777777;
+}
+.navbar-header button{
+	border:1px solid #ffffff;
+}
+.navbar-header button span{
+	background-color:#ffffff;
 }
 .navbar-collapse {
 	padding-right: 0;
@@ -265,7 +270,7 @@ menu{
 -----------------------------------------------------------------------------*/
 .catalog {
 	width: 100%;
-	padding: 0 0 1020px;
+	padding: 0 0 220px;
 	position: relative;
 	color:#767676;
 	margin-top: 4px;
@@ -276,12 +281,6 @@ menu{
 	clear: both;
 	content: '';
 }
-/*.container {*/
-	/*width: 100%;*/
-	/*float: left;*/
-	/*overflow: hidden;*/
-/*}*/
-
 main{
 	margin-left: -2%;
 }
@@ -329,21 +328,11 @@ aside, main{
 	padding: 7% 5% 0 0;
 }
 .pagination {
-
-}
-.pagination {
 	display: inline-block;
 	margin: 1% 0 0 10%;
 	border-radius: 4px;
 	font-size: 16px;
 }
-/*.pagination {*/
-	/*display: inline-block;*/
-	/*padding-left: 0px;*/
-	/*margin: 20px 0;*/
-	/*border-radius: 4px;*/
-	/*font-size: 16px;*/
-/*}*/
 .pagination>li>a {
 	 position: relative;
 	 text-decoration: none;
@@ -358,10 +347,9 @@ aside, main{
 	padding-top: 0;
 }
 .main-text{
-	margin: 10% -2% 21.5% 0%;
+	margin: 10% -2% 21.5% 0;
 	letter-spacing: 0.8px;
 }
-
 
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
@@ -404,7 +392,6 @@ aside, main{
 }
 .panel-group ul li a {
 	font-size: 14px;
-
 }
 .panel-group ul li a:hover {
 	color:#000;
@@ -420,7 +407,6 @@ aside, main{
 	color: #444444;
 	margin: 3% 0 0 -21%;
 }
-
 
 /* Footer
 -----------------------------------------------------------------------------*/
@@ -457,3 +443,61 @@ aside, main{
 .footer_test a:hover{
 	text-decoration: none;
 }
+
+/*--------------------------media-------------------------------------------------------------------------------------*/
+@media (max-width: 1199px) and (min-width: 480px) {
+	#myNavbar ul li a {
+		padding-bottom: 6%;
+	}
+}
+@media (max-width: 992px) and (min-width: 480px) {
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.header-feedback{
+		margin-top: -5%;
+		padding-left: 25%;
+	}
+	.wrapper,#myNavbar{
+		overflow: hidden;
+	}
+	.price img{
+		margin: 0  -5%;
+		padding: 0;
+	}
+}
+@media (max-width: 773px) and (min-width: 480px) {
+	.header-tel{
+		padding-left: 0;
+	}
+	header {
+		height: 100%;
+		background: #dcdcdc;
+	}
+	.modal-dialog{
+		margin:2% 0 0 2%;
+	}
+	.price img{
+		margin: 0;
+	}
+	.left-text{
+		margin-bottom: 4%;
+	}
+}
+@media (max-width: 767px) and (min-width: 480px) {
+	.header-logo, .header-tel{
+		padding-left: 5%;
+	}
+	.header-feedback{
+		margin-top: -2%;
+		padding-left: 10%;
+	}
+	.content-img{
+		width: 100%;
+	}
+	.footer_email,.footer_test{
+		margin-left: 10%
+	}
+}
+
